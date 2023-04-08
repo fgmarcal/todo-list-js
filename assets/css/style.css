@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main #main-container h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+
+
+::placeholder{
+    color: rgb(224, 223, 217);
+}
+
+main #main-container .btn {
+    background-color:cornflowerblue;
+    color:lightcyan;
+    font-weight: bold;    
+    font-size: small;
+    border-radius: 4px 4px;
+    cursor: pointer;
+}
+
+
+main #list .list-table {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.list-table .todo {
+    display: flex;
+    min-width: 70px;
+    align-items: start;
+    justify-content: start;
+}
+
+.list-table .todo input {
+    margin-right: 10px;
+}
+
+:checked + .task{
+    text-decoration: line-through;
+    color: grey;
+}
